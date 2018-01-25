@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <meta content="portrait" name="x5-orientation"/>
+        <meta content="true" name="x5-fullscreen"/>
+        <meta content="portrait" name="screen-orientation"/>
+        <meta content="yes" name="full-screen"/>
+        <meta content="telephone=no,email=no" name="format-detection"/>
+        <meta content="YES" name="apple-touch-fullscreen"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="-1" http-equiv="Expires"/>
+        <meta content="no-cache" http-equiv="pragram"/>
+        <!-- amazeUi -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <!-- Set render engine for 360 browser -->
+        <meta content="webkit" name="renderer">
+        <!-- No Baidu Siteapp-->
+        <meta content="no-siteapp" http-equiv="Cache-Control"/>
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta content="yes" name="mobile-web-app-capable">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="Amaze UI" name="apple-mobile-web-app-title"/>
+        <meta content="#0e90d2" name="msapplication-TileColor"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="screen-orientation" content="portrait"/>
+        <meta name="full-screen" content="yes"/>
+        <link href="css/amazeui.min.css" rel="stylesheet">
+        <title>游客服务</title>
+        <link href="css/frame.css" rel="stylesheet"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/accordion.css"/>
+        <script src="js/rem.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script>
+            window.onload = function () {
+				var oBtn = document.getElementById("btn");
+				var oDiv = document.getElementById("nav_wrap");
+				var flag = 1;
+
+				/*document.addEventListener('touchstart', function (ev) {
+					ev.preventDefault();
+				} );*/
+
+				oBtn.addEventListener('touchend', function () {
+					if(flag) {
+						oDiv.style.display = "block";
+						oDiv.addEventListener('touchmove', function () {
+							this.style.display = "none";
+						} )
+
+					}else {
+						oDiv.style.display = "none";
+					}
+				} );
+			}
+        </script>
+                                
+    </head>
+    <body>
+        <!-- header -->
+        <div class="header">
+            <a href="index.html" class="back"><i class="iconfont">&#xe62b;</i></a>
+            <p class="h_title">游客服务</p>
+            <a class="iconfont menu" href="#" id="btn">&#xe696;</a>
+        </div>
+        <!-- end header -->
+
+        <!-- nav -->
+        <div class="nav_wrap" id="nav_wrap" style="display:none;">
+            <ul class="nav">
+                <li>
+                    <a href="javascript:;">
+                        <i class="iconfont">&#xe696;</i>
+                        <span>
+                            导航
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="iconfont">&#xe60b;</i>
+                        <span>
+                            园区概况
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tszq.html">
+                        <i class="iconfont">&#xe64b;</i>
+                        <span>
+                            特色展区
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ykfw.html">
+                        <i class="iconfont">&#xe88f;</i>
+                        <span>
+                            游园服务
+                        </span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class="iconfont">&#xe645;</i>
+                        <span>
+                            餐饮服务
+                        </span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="kpjy.html">
+                        <i class="iconfont">&#xe71c;</i>
+                        <span>
+                            科普教育
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="yqdt.html">
+                        <i class="iconfont">&#xe662;</i>
+                        <span>
+                            园区动态
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="iconfont">&#xe60c;</i>
+                        <span>
+                            联系我们
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end nav -->
+        
+        <!-- content -->
+        <div class="content">
+            
+            <!-- accordion-->
+            <ul id="accordion" class="accordion">
+                <li>
+                    <div class="link">票价信息<i class="fa fa-chevron-down"></i></div>
+                    <div class="submenu">
+                        <dl class="clear">
+                            <dd class="head_til">名称</dd>
+                            <dd class="head_til">票价</dd>
+                            <dd class="head_til">游览范围</dd>
+                            <dd>大门门票</dd>
+                            <dd>42元/人次</dd>
+                            <dd>步行区</dd>
+                            <dd>步行区门票</dd>
+                            <dd>42元/人次</dd>
+                            <dd>车行区</dd>
+                            <dd>步、车行区通票</dd>
+                            <dd>77元/人次</dd>
+                            <dd>步、车行区</dd>
+                            <dd>收费依据</dd>
+                            <dd>长价服[2016]6号CJF NO.[2013]6</dd>
+                        </dl>
+                        <p class="pjxx_tit">大门门票优惠标准</p>
+                        <p class="pjxx_txt">1、对6周岁（不含6周岁）以下或身高1.3米（含1.3米）以下儿童、70周岁（含70周岁）以上老年人、残疾人凭有效证件实行免票。</p>
+                        <p class="pjxx_txt">2、对6周岁（含6周岁）—— 18周岁（不含18周岁）未成年人、全日制大学本科及以下学历在校学生、60周岁（含60周岁）至70周岁（不含70周岁）的老年人、现役军人、军队离退休干部凭有效证件实行半价优惠。</p>
+                        <p class="pjxx_txt">3、香港、澳门、台湾等入境游青少年、凭《港澳居民来往内地通行证》、《台湾居民来往大陆通行证》或学生证件等有效身份证明、实行同等门票价格优惠。</p>
+                        <p class="pjxx_ps">备注：所有票种均包含明信片式门票价格。</p>
+                    </div>   
+                </li>
+                <li>
+                    <div class="link">开放时间<i class="fa fa-chevron-down"></i></div>
+                    <div class="submenu">
+                        <dl class="clear">
+                            <dd class="head_til">名称</dd>
+                            <dd class="head_til">票价</dd>
+                            <dd class="head_til">游览范围</dd>
+                            <dd>大门门票</dd>
+                            <dd>42元/人次</dd>
+                            <dd>步行区</dd>
+                            <dd>步行区门票</dd>
+                            <dd>42元/人次</dd>
+                            <dd>车行区</dd>
+                            <dd>步、车行区通票</dd>
+                            <dd>77元/人次</dd>
+                            <dd>步、车行区</dd>
+                            <dd>收费依据</dd>
+                            <dd>长价服[2016]6号CJF NO.[2013]6</dd>
+                        </dl>
+                        <p class="pjxx_tit">大门门票优惠标准</p>
+                        <p class="pjxx_txt">1、对6周岁（不含6周岁）以下或身高1.3米（含1.3米）以下儿童、70周岁（含70周岁）以上老年人、残疾人凭有效证件实行免票。</p>
+                        <p class="pjxx_txt">2、对6周岁（含6周岁）—— 18周岁（不含18周岁）未成年人、全日制大学本科及以下学历在校学生、60周岁（含60周岁）至70周岁（不含70周岁）的老年人、现役军人、军队离退休干部凭有效证件实行半价优惠。</p>
+                        <p class="pjxx_txt">3、香港、澳门、台湾等入境游青少年、凭《港澳居民来往内地通行证》、《台湾居民来往大陆通行证》或学生证件等有效身份证明、实行同等门票价格优惠。</p>
+                        <p class="pjxx_ps">备注：所有票种均包含明信片式门票价格。</p>
+                    </div>   
+                </li>
+                <li>
+                    <div class="link">交通指南<i class="fa fa-chevron-down"></i></div>
+                    <div class="submenu">
+                        <dl class="clear">
+                            <dd class="head_til">名称</dd>
+                            <dd class="head_til">票价</dd>
+                            <dd class="head_til">游览范围</dd>
+                            <dd>大门门票</dd>
+                            <dd>42元/人次</dd>
+                            <dd>步行区</dd>
+                            <dd>步行区门票</dd>
+                            <dd>42元/人次</dd>
+                            <dd>车行区</dd>
+                            <dd>步、车行区通票</dd>
+                            <dd>77元/人次</dd>
+                            <dd>步、车行区</dd>
+                            <dd>收费依据</dd>
+                            <dd>长价服[2016]6号CJF NO.[2013]6</dd>
+                        </dl>
+                        <p class="pjxx_tit">大门门票优惠标准</p>
+                        <p class="pjxx_txt">1、对6周岁（不含6周岁）以下或身高1.3米（含1.3米）以下儿童、70周岁（含70周岁）以上老年人、残疾人凭有效证件实行免票。</p>
+                        <p class="pjxx_txt">2、对6周岁（含6周岁）—— 18周岁（不含18周岁）未成年人、全日制大学本科及以下学历在校学生、60周岁（含60周岁）至70周岁（不含70周岁）的老年人、现役军人、军队离退休干部凭有效证件实行半价优惠。</p>
+                        <p class="pjxx_txt">3、香港、澳门、台湾等入境游青少年、凭《港澳居民来往内地通行证》、《台湾居民来往大陆通行证》或学生证件等有效身份证明、实行同等门票价格优惠。</p>
+                        <p class="pjxx_ps">备注：所有票种均包含明信片式门票价格。</p>
+                    </div>   
+                </li>
+                <li>
+                    <div class="link">游园地图<i class="fa fa-chevron-down"></i></div>
+                    <div class="submenu">
+                        <dl class="clear">
+                            <dd class="head_til">名称</dd>
+                            <dd class="head_til">票价</dd>
+                            <dd class="head_til">游览范围</dd>
+                            <dd>大门门票</dd>
+                            <dd>42元/人次</dd>
+                            <dd>步行区</dd>
+                            <dd>步行区门票</dd>
+                            <dd>42元/人次</dd>
+                            <dd>车行区</dd>
+                            <dd>步、车行区通票</dd>
+                            <dd>77元/人次</dd>
+                            <dd>步、车行区</dd>
+                            <dd>收费依据</dd>
+                            <dd>长价服[2016]6号CJF NO.[2013]6</dd>
+                        </dl>
+                        <p class="pjxx_tit">大门门票优惠标准</p>
+                        <p class="pjxx_txt">1、对6周岁（不含6周岁）以下或身高1.3米（含1.3米）以下儿童、70周岁（含70周岁）以上老年人、残疾人凭有效证件实行免票。</p>
+                        <p class="pjxx_txt">2、对6周岁（含6周岁）—— 18周岁（不含18周岁）未成年人、全日制大学本科及以下学历在校学生、60周岁（含60周岁）至70周岁（不含70周岁）的老年人、现役军人、军队离退休干部凭有效证件实行半价优惠。</p>
+                        <p class="pjxx_txt">3、香港、澳门、台湾等入境游青少年、凭《港澳居民来往内地通行证》、《台湾居民来往大陆通行证》或学生证件等有效身份证明、实行同等门票价格优惠。</p>
+                        <p class="pjxx_ps">备注：所有票种均包含明信片式门票价格。</p>
+                    </div>   
+                </li>
+                <li>
+                    <div class="link">游园线路<i class="fa fa-chevron-down"></i></div>
+                    <div class="submenu">
+                        <dl class="clear">
+                            <dd class="head_til">名称</dd>
+                            <dd class="head_til">票价</dd>
+                            <dd class="head_til">游览范围</dd>
+                            <dd>大门门票</dd>
+                            <dd>42元/人次</dd>
+                            <dd>步行区</dd>
+                            <dd>步行区门票</dd>
+                            <dd>42元/人次</dd>
+                            <dd>车行区</dd>
+                            <dd>步、车行区通票</dd>
+                            <dd>77元/人次</dd>
+                            <dd>步、车行区</dd>
+                            <dd>收费依据</dd>
+                            <dd>长价服[2016]6号CJF NO.[2013]6</dd>
+                        </dl>
+                        <p class="pjxx_tit">大门门票优惠标准</p>
+                        <p class="pjxx_txt">1、对6周岁（不含6周岁）以下或身高1.3米（含1.3米）以下儿童、70周岁（含70周岁）以上老年人、残疾人凭有效证件实行免票。</p>
+                        <p class="pjxx_txt">2、对6周岁（含6周岁）—— 18周岁（不含18周岁）未成年人、全日制大学本科及以下学历在校学生、60周岁（含60周岁）至70周岁（不含70周岁）的老年人、现役军人、军队离退休干部凭有效证件实行半价优惠。</p>
+                        <p class="pjxx_txt">3、香港、澳门、台湾等入境游青少年、凭《港澳居民来往内地通行证》、《台湾居民来往大陆通行证》或学生证件等有效身份证明、实行同等门票价格优惠。</p>
+                        <p class="pjxx_ps">备注：所有票种均包含明信片式门票价格。</p>
+                    </div>   
+                </li>
+                <li>
+                    <div class="link">游园须知<i class="fa fa-chevron-down"></i></div>
+                    <div class="submenu">
+                        <dl class="clear">
+                            <dd class="head_til">名称</dd>
+                            <dd class="head_til">票价</dd>
+                            <dd class="head_til">游览范围</dd>
+                            <dd>大门门票</dd>
+                            <dd>42元/人次</dd>
+                            <dd>步行区</dd>
+                            <dd>步行区门票</dd>
+                            <dd>42元/人次</dd>
+                            <dd>车行区</dd>
+                            <dd>步、车行区通票</dd>
+                            <dd>77元/人次</dd>
+                            <dd>步、车行区</dd>
+                            <dd>收费依据</dd>
+                            <dd>长价服[2016]6号CJF NO.[2013]6</dd>
+                        </dl>
+                        <p class="pjxx_tit">大门门票优惠标准</p>
+                        <p class="pjxx_txt">1、对6周岁（不含6周岁）以下或身高1.3米（含1.3米）以下儿童、70周岁（含70周岁）以上老年人、残疾人凭有效证件实行免票。</p>
+                        <p class="pjxx_txt">2、对6周岁（含6周岁）—— 18周岁（不含18周岁）未成年人、全日制大学本科及以下学历在校学生、60周岁（含60周岁）至70周岁（不含70周岁）的老年人、现役军人、军队离退休干部凭有效证件实行半价优惠。</p>
+                        <p class="pjxx_txt">3、香港、澳门、台湾等入境游青少年、凭《港澳居民来往内地通行证》、《台湾居民来往大陆通行证》或学生证件等有效身份证明、实行同等门票价格优惠。</p>
+                        <p class="pjxx_ps">备注：所有票种均包含明信片式门票价格。</p>
+                    </div>   
+                </li>
+            </ul>
+            <!-- end accordion -->
+
+            <!-- footer -->
+            <div class="footer">2017-2018©湖南畅旅信息科技有限公司  湘ICP备 08009156号-6</div>
+            <!-- end footer -->
+
+        </div>
+       <!-- 底部菜单 -->
+        <ul class="caidan clear">
+            <li>
+                <a href="index.html">
+                    <p class="c_pic"><i class="iconfont">&#xe636;</i></p>
+                    <p class="c_txt">首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="mpyd.html">
+                    <p class="c_pic"><i class="iconfont">&#xe616;</i></p>
+                    <p class="c_txt">在线预定</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="c_pic"><img src="img/c_03.png" alt=""></p>
+                    <p class="c_txt">720°全景</p>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <p class="c_pic"><i class="iconfont">&#xe60c;</i></p>
+                    <p class="c_txt">联系我们</p>
+                </a>
+            </li>
+        </ul>
+        <!-- end 底部菜单 -->
+       
+        <script src="js/amazeui.min.js"></script>
+        <script src="js/accordion.js"></script>
+    </body>
+</html>
